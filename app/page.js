@@ -36,20 +36,20 @@ export default function Home() {
         <meta property="og:description" content="Crafting stellar content and boosting your brand on social media with creative solutions." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://starzdustagency.com/" />
-        <meta property="og:image" content="https://starzdustagency.com/logo.png" />
+        <meta property="og:image" content="https://starzdustagency.com/images/logo.png" />
         
         {/* Twitter Cards (for Twitter) */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="STARZDUST | SMM for Stellar Brands" />
         <meta name="twitter:description" content="Unique SMM strategies and creative marketing to skyrocket your social media success." />
-        <meta name="twitter:image" content="https://starzdustagency.com/logo.png" />
+        <meta name="twitter:image" content="https://starzdustagency.com/images/logo.png" />
         
         {/* Подключение шрифтов */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
 
-        <link rel="icon" href="https://starzdustagency.com/logo.png" />
+        <link rel="icon" href="https://starzdustagency.com/images/logo.png" />
       </Head>
       {/* Остальной код JSX остается без изменений */}
       <div className={styles.container}>

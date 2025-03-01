@@ -21,14 +21,14 @@ export const metadata = {
     description: "Crafting stellar content and boosting your brand on social media with creative solutions.",
     url: "https://starzdustagency.com/",
     type: "website",
-    image: "https://starzdustagency.com/logo.png",
+    image: "https://starzdustagency.com/images/logo.png",
   },
   // Twitter Cards для SMM
   twitter: {
     card: "summary_large_image",
     title: "STARZDUST | SMM for Stellar Brands",
     description: "Unique SMM strategies and creative marketing to skyrocket your social media success.",
-    image: "https://starzdustagency.com/logo.png",
+    image: "https://starzdustagency.com/images/logo.png",
   },
 };
 
