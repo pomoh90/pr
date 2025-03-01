@@ -48,6 +48,8 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+        <link rel="icon" href="https://starzdustagency.com/logo.png" />
       </Head>
       {/* Остальной код JSX остается без изменений */}
       <div className={styles.container}>
