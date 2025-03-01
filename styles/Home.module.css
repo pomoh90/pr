@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+.body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #ffd700;
+  margin: 0;
+  padding: 0;
+}
+
+/* Общий контейнер страницы */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Золотой текст */
+.goldText {
+  color: #ffd700;
+}
+
+/* Золотая кнопка */
+.goldButton {
+  background-color: #ffd700;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.goldButton:hover {
+  background-color: #fff;
+}
+
+/* Шапка */
+.header {
+  width: 100%;
+  background: #000;
+  border-bottom: 2px solid #ffd700; /* Линия под логотипом */
+  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
+  position: relative; /* Убрали fixed, чтобы хедер прокручивался */
+}
+
+.headerContent {
+  max-width: 1200px; /* Ограничение ширины для центрирования */
+  margin: 0 auto; /* Центрирование хедера */
+  padding: 1rem 2rem; /* Равномерные отступы слева и справа */
+  display: flex;
+  justify-content: space-between; /* Распределяем элементы по краям */
+  align-items: center; /* Центрируем вертикально */
+  gap: 1rem; /* Расстояние между логотипом и кнопкой меню */
+}
+
+.logoContainer {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center; /* Центрируем логотип вертикально */
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  color: #ffd700;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001; /* Убедимся, что кнопка выше всех других элементов */
+}
+
+.menuIcon {
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #ffd700;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  color: #fff;
+}
+
+.closeButton {
+  background: none;
+  color: #ffd700;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-top: 1rem; /* Отступ сверху для кнопки закрытия в меню */
+  align-self: center; /* Центрируем кнопку закрытия в меню */
+  display: none; /* Скрываем по умолчанию в десктопной версии */
+}
+
+.mobileOnly {
+  display: none;
+}
+
+/* Мобильное меню */
+.navOpen {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #000;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
+  z-index: 1000; /* Убедимся, что меню выше других элементов */
+}
+
+/* Адаптивность для мобильных (хедер) */
+@media (max-width: 768px) {
+  .headerContent {
+    padding: 1rem 1rem; /* Уменьшил отступы для мобильной версии */
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+  .nav.navOpen {
+    display: flex;
+  }
+
+  .navList {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .navLink {
+    padding: 0.5rem 0;
+    display: block;
+    font-size: 1.1rem;
+  }
+
+  .logoContainer {
+    width: 250px; /* Увеличил логотип на мобильной версии */
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .closeButton {
+    display: block; /* Показываем кнопку закрытия только на мобильной версии */
+  }
+
+  .mobileOnly {
+    display: block;
+  }
+
+  /* Убираем margin-top для mainContent, так как хедер теперь не фиксированный */
+  .mainContent {
+    margin-top: 0;
+  }
+
+  .heroSection {
+    padding-top: 20px; /* Отступ 20px для первого блока от хедера */
+    min-height: 100vh; /* Восстанавливаем высоту, так как хедер прокручивается */
+  }
+}
+
+/* Остальные стили остаются без изменений, если не требуется их корректировка */
+
+.heroSection {
+  padding: 6rem 2rem 4rem;
+  text-align: center;
+  background: url('/images/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  color: #ffd700;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.heroImageContainer {
+  margin-top: 2rem;
+}
+
+.heroImage {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+}
+
+.aboutSection {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #000;
+  align-items: center;
+}
+
+.aboutContent {
+  max-width: 600px;
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.aboutText {
+  font-size: 1.1rem;
+  color: #ffd700;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.learnMoreButton {
+  background: #ffd700;
+  color: #000;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.learnMoreButton:hover {
+  background: #fff;
+}
+
+.aboutImageContainer {
+  max-width: 650px;
+}
+
+.aboutImage {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
+}
+
+.servicesOverview {
+  padding: 4rem 2rem;
+  background: #000;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.sectionDescription {
+  font-size: 1.1rem;
+  color: #ffd700;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Новый стиль для изображений в карточках проектов */
+.projectImage {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.1);
+    width: 100%; /* Убедимся, что изображение занимает всю ширину карточки */
+    height: auto; /* Сохраняем пропорции */
+  }
+
+.serviceCards {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем карточки по горизонтали */
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+.serviceCard {
+  background: rgba(255, 215, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceCard h3 {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-bottom: 0.5rem;
+}
+
+.serviceCard p {
+  font-size: 1rem;
+  color: #ffd700;
+  line-height: 1.5;
+}
+
+.clientsSection {
+  padding: 4rem 2rem;
+  background: #000;
+  text-align: center;
+}
+
+.clientLogos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.clientLogo {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.1);
+}
+
+.footer {
+  padding: 2rem;
+  background: #000;
+  color: #ffd700;
+  text-align: center;
+}
+
+.footerContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footerText {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.socialLink {
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #fff;
+}
+
+/* Адаптивность для остальных секций */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .aboutTitle, .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .serviceCards {
+    grid-template-columns: 1fr;
+  }
+
+  .heroImage, .aboutImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .clientLogos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Стили для формы контакта */
+.contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
+  }
+  
+  .formGroup {
+    margin-bottom: 1.5rem;
+  }
+  
+  .input, .textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ffd700;
+    border-radius: 8px;
+    background: #000;
+    color: #ffd700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus, .textarea:focus {
+    outline: none;
+    border-color: #fff;
+  }
+  
+  .textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .errorInput {
+    border-color: #ff4444;
+  }
+  
+  .errorText {
+    color: #ff4444;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+  
+  .successButton {
+    background-color: #4CAF50; /* Зелёный цвет для успешной отправки */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .checkIcon {
+    font-size: 1rem;
+  }
+  
+  .contactInfo {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .contactInfo a {
+    text-decoration: none;
+    color: #ffd700;
+    transition: color 0.3s ease;
+  }
+  
+  .contactInfo a:hover {
+    color: #fff;
+  }
