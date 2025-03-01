@@ -12,6 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  icons: {
+    icon: "/images/favicon.ico", // Или "/images/favicon.ico", если вы создали новый файл
+  },
   title: "STARZDUST | SMM and Creative Marketing",
   description: "STARZDUST — Shaping the future of PR, marketing, and creative solutions for stellar brands.",
   viewport: "width=device-width, initial-scale=1",
