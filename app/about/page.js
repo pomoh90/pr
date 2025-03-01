@@ -100,7 +100,7 @@ export default function About() {
               variants={childVariants}
             >
               <Image 
-                src="/images/about-hero.jpg" 
+                src="/images/about-team.jpg" 
                 alt="STARZDUST Team" 
                 width={700} 
                 height={450} 
@@ -112,7 +112,7 @@ export default function About() {
           {/* Our History Section */}
           <motion.section 
             className={styles.aboutSection} 
-            initial="hidden"
+            // initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={containerVariants}
@@ -230,9 +230,9 @@ export default function About() {
                 © 2025 STARZDUST. Driving Innovation in PR and Marketing.
               </p>
               <div className={styles.socialLinks}>
-                <Link href="https://twitter.com/starzdust" className={styles.socialLink}>Twitter</Link>
+                {/* <Link href="https://twitter.com/starzdust" className={styles.socialLink}>Twitter</Link>
                 <Link href="https://instagram.com/starzdust" className={styles.socialLink}>Instagram</Link>
-                <Link href="https://linkedin.com/company/starzdust" className={styles.socialLink}>LinkedIn</Link>
+                <Link href="https://linkedin.com/company/starzdust" className={styles.socialLink}>LinkedIn</Link> */}
               </div>
             </motion.div>
           </footer>

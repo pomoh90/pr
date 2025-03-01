@@ -189,7 +189,7 @@
   }
 
   .heroSection {
-    padding-top: 20px; /* Отступ 20px для первого блока от хедера */
+    padding-top: 5px; /* Отступ 20px для первого блока от хедера */
     min-height: 100vh; /* Восстанавливаем высоту, так как хедер прокручивается */
   }
 }
@@ -202,7 +202,7 @@
   background: url('/images/hero-bg.jpg') no-repeat center center;
   background-size: cover;
   color: #ffd700;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

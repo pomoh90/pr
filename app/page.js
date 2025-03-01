@@ -240,11 +240,11 @@ export default function Home() {
               <p className={styles.footerText}>
                 © 2025 STARZDUST. Driving Innovation in PR and Marketing.
               </p>
-              <div className={styles.socialLinks}>
+              {/* <div className={styles.socialLinks}>
                 <Link href="https://twitter.com/starzdust" className={styles.socialLink}>Twitter</Link>
                 <Link href="https://instagram.com/starzdust" className={styles.socialLink}>Instagram</Link>
                 <Link href="https://linkedin.com/company/starzdust" className={styles.socialLink}>LinkedIn</Link>
-              </div>
+              </div> */}
             </motion.div>
           </footer>
         </main>

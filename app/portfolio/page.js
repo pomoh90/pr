@@ -144,9 +144,9 @@ export default function Portfolio() {
                   height={200} 
                   className={styles.projectImage} 
                 />
-                <Link href="/portfolio/luxury-brand-launch" className={styles.navLink}>
+                {/* <Link href="/portfolio/luxury-brand-launch" className={styles.navLink}>
                   Learn More
-                </Link>
+                </Link> */}
               </motion.div>
               <motion.div 
                 className={styles.serviceCard} 
@@ -162,9 +162,9 @@ export default function Portfolio() {
                   height={200} 
                   className={styles.projectImage} 
                 />
-                <Link href="/portfolio/tech-startup-growth" className={styles.navLink}>
+                {/* <Link href="/portfolio/tech-startup-growth" className={styles.navLink}>
                   Learn More
-                </Link>
+                </Link> */}
               </motion.div>
               <motion.div 
                 className={styles.serviceCard} 
@@ -180,9 +180,9 @@ export default function Portfolio() {
                   height={200} 
                   className={styles.projectImage} 
                 />
-                <Link href="/portfolio/entertainment-campaign" className={styles.navLink}>
+                {/* <Link href="/portfolio/entertainment-campaign" className={styles.navLink}>
                   Learn More
-                </Link>
+                </Link> */}
               </motion.div>
             </div>
           </motion.section>
@@ -267,11 +267,11 @@ export default function Portfolio() {
               <p className={styles.footerText}>
                 © 2025 STARZDUST. Driving Innovation in PR and Marketing.
               </p>
-              <div className={styles.socialLinks}>
+              {/* <div className={styles.socialLinks}>
                 <Link href="https://twitter.com/starzdust" className={styles.socialLink}>Twitter</Link>
                 <Link href="https://instagram.com/starzdust" className={styles.socialLink}>Instagram</Link>
                 <Link href="https://linkedin.com/company/starzdust" className={styles.socialLink}>LinkedIn</Link>
-              </div>
+              </div> */}
             </motion.div>
           </footer>
         </main>
