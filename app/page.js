@@ -27,13 +27,29 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>STARZDUST</title>
+        <title>STARZDUST | SMM and Creative Marketing</title>
         <meta name="description" content="STARZDUST — Shaping the future of PR, marketing, and creative solutions for stellar brands." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        {/* Open Graph (for Facebook, LinkedIn, and other platforms) */}
+        <meta property="og:title" content="STARZDUST | Elevate Your SMM and Marketing" />
+        <meta property="og:description" content="Crafting stellar content and boosting your brand on social media with creative solutions." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://starzdustagency.com/" />
+        <meta property="og:image" content="https://starzdustagency.com/logo.png" />
+        
+        {/* Twitter Cards (for Twitter) */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="STARZDUST | SMM for Stellar Brands" />
+        <meta name="twitter:description" content="Unique SMM strategies and creative marketing to skyrocket your social media success." />
+        <meta name="twitter:image" content="https://starzdustagency.com/logo.png" />
+        
+        {/* Подключение шрифтов */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
       </Head>
+      {/* Остальной код JSX остается без изменений */}
       <div className={styles.container}>
         {/* Header */}
         <header className={styles.header}>
